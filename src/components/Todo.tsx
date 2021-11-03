@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Todo() {
+interface TodoProps {
+    text: string;
+}
+
+function Todo({ text }: TodoProps) {
     return (
         <div className='card'>
-            <h2>TITLE</h2>
+            <h2>{text}</h2>
             <div className='actions'>
                 <button className='btn'>Delete</button>
             </div>
